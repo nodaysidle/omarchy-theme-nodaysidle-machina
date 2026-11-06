@@ -5,7 +5,53 @@ set -euo pipefail
 THEME="${1:-}"
 
 if [[ "$THEME" == "nodaysidle-machina" || "$THEME" == "Nodaysidle Machina" ]]; then
-  # Reload Ghostty if running
+  # 1. Update Fish shell syntax highlighting for nodaysidle-machina
+  mkdir -p "$HOME/.config/fish/conf.d"
+  cat <<'EOF' > "$HOME/.config/fish/conf.d/omarchy-theme.fish"
+# Generated for nodaysidle-machina
+set -g fish_color_normal f8fafc
+set -g fish_color_command e2e8f0 --bold
+set -g fish_color_keyword cbd5e1 --bold
+set -g fish_color_quote 94a3b8
+set -g fish_color_redirection cbd5e1
+set -g fish_color_end 64748b
+set -g fish_color_error f43f5e --bold
+set -g fish_color_param f8fafc
+set -g fish_color_comment 64748b
+set -g fish_color_selection --background=242832
+set -g fish_color_search_match --background=242832
+set -g fish_color_operator e2e8f0
+set -g fish_color_escape cbd5e1
+set -g fish_color_autosuggestion 475569
+EOF
+
+  # 2. Update universal fish variables for active sessions
+  if command -v fish >/dev/null 2>&1; then
+    fish -c "
+      set -U fish_color_normal f8fafc
+      set -U fish_color_command e2e8f0 --bold
+      set -U fish_color_keyword cbd5e1 --bold
+      set -U fish_color_quote 94a3b8
+      set -U fish_color_redirection cbd5e1
+      set -U fish_color_end 64748b
+      set -U fish_color_error f43f5e --bold
+      set -U fish_color_param f8fafc
+      set -U fish_color_comment 64748b
+      set -U fish_color_selection --background=242832
+      set -U fish_color_search_match --background=242832
+      set -U fish_color_operator e2e8f0
+      set -U fish_color_escape cbd5e1
+      set -U fish_color_autosuggestion 475569
+    " >/dev/null 2>&1 || true
+  fi
+
+  # 3. Reload Ghostty terminal
   killall -SIGUSR2 ghostty >/dev/null 2>&1 || true
-  echo "[nodaysidle-machina] Applied theme hook and notified Ghostty"
+
+  # 4. Reload Herdr multiplexer server
+  if command -v herdr >/dev/null 2>&1; then
+    herdr server reload-config >/dev/null 2>&1 || true
+  fi
+
+  echo "[nodaysidle-machina] Applied theme hook (Ghostty, Fish, Herdr updated)"
 fi
