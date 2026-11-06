@@ -98,6 +98,6 @@ hl.animation({ leaf = "layersOut", enabled = true, speed = 2.0, bezier = "machin
 o.window({ tag = "terminal" }, { tag = "-default-opacity", opacity = "0.98 0.90" })
 o.window({ tag = "default-opacity" }, { opacity = "0.98 0.90" })
 o.window({ class = "com.mitchellh.ghostty" }, { opacity = "0.98 0.90" })
-o.window({ initialTitle = "Herdr" }, { opacity = "0.98 0.90" })
+o.window({ title = "^Herdr.*" }, { opacity = "0.98 0.90" })
 
 hl.layer_rule({ match = { namespace = "^(omarchy-bar|omarchy-notifications|omarchy-osd|omarchy-reminders)$" }, blur = true })
