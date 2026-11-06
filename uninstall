@@ -1,0 +1,10 @@
+#!/bin/bash
+# Uninstaller for nodaysidle Machina
+set -euo pipefail
+
+TARGET_DIR="$HOME/.config/omarchy/themes/nodaysidle-machina"
+HOOK_FILE="$HOME/.config/omarchy/hooks/theme-set.d/nodaysidle-machina"
+
+rm -rf "$TARGET_DIR"
+rm -f "$HOOK_FILE"
+echo "✔ Removed nodaysidle-machina links"

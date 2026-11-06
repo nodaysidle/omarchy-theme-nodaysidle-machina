@@ -1,0 +1,9 @@
+#!/bin/bash
+# Omarchy Theme Hook for nodaysidle Machina
+set -euo pipefail
+
+THEME="${1:-}"
+
+if [[ "$THEME" == "nodaysidle-machina" || "$THEME" == "Nodaysidle Machina" ]]; then
+  echo "[nodaysidle-machina] Applied theme hook"
+fi

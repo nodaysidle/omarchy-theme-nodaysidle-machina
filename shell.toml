@@ -1,0 +1,78 @@
+# Omarchy Shell Surfaces for nodaysidle Machina
+# Industrial Titanium & Liquid Mercury
+
+[bar]
+background       = "#0E1013"
+background-alpha = 0.94
+text             = "#F8FAFC"
+active           = "#E2E8F0"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "#E2E8F0"
+active-border-foreground = "#FFFFFF"
+
+[controls]
+normal-color        = "#475569"
+normal-fill-alpha   = 0.08
+normal-border       = "#242832"
+normal-border-width = 1
+normal-border-alpha = 0.60
+
+hover-cursor-color        = "#E2E8F0"
+hover-cursor-fill-alpha   = 0.16
+hover-cursor-border       = "#CBD5E1"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.75
+
+focus-color        = "#E2E8F0"
+focus-fill-alpha   = 0.15
+focus-border       = "#E2E8F0"
+focus-border-width = 1
+focus-border-alpha = 0.85
+
+selected-color        = "#FFFFFF"
+selected-fill-alpha   = 0.22
+selected-border       = "#E2E8F0"
+selected-border-width = 1
+selected-border-alpha = 0.90
+
+pressed-fill-alpha   = 0.30
+selection-fill-alpha = 0.40
+
+[font]
+base-size = 11
+
+[popups]
+background       = "#0E1013"
+background-alpha = 0.96
+text             = "#F8FAFC"
+border           = "#475569"
+border-alpha     = 0.70
+
+[tooltip]
+background       = "#090A0D"
+background-alpha = 0.98
+text             = "#E2E8F0"
+border           = "#242832"
+border-alpha     = 0.80
+
+[notifications]
+background       = "#0E1013"
+background-alpha = 0.96
+text             = "#F8FAFC"
+border           = "#CBD5E1"
+border-alpha     = 0.85
+urgency-low      = "#475569"
+urgency-normal   = "#E2E8F0"
+urgency-critical = "#F43F5E"
+
+[osd]
+background       = "#0E1013"
+background-alpha = 0.94
+text             = "#F8FAFC"
+border           = "#242832"
+border-alpha     = 0.70
+fill             = "#E2E8F0"

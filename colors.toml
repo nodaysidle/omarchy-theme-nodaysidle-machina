@@ -1,0 +1,56 @@
+# nodaysidle Machina — Master Palette
+# Inspired by omacarchy & Mac Studio / Braun industrial precision.
+# Brushed titanium, liquid silver, matte carbon obsidian, pure typographic legibility.
+
+mode = "dark"
+theme_type = "dark"
+
+accent = "#E2E8F0"
+selection = "#242832"
+selection_foreground = "#FFFFFF"
+muted = "#64748B"
+
+background = "#0E1013"
+dark_background = "#090A0D"
+darker_background = "#060709"
+lighter_background = "#181A20"
+
+foreground = "#F8FAFC"
+dark_foreground = "#475569"
+light_foreground = "#94A3B8"
+bright_foreground = "#FFFFFF"
+
+# Refined accents with a silver/mercury lean
+red = "#F43F5E"
+yellow = "#E2E8F0"
+orange = "#FB923C"
+green = "#10B981"
+cyan = "#94A3B8"
+blue = "#CBD5E1"
+magenta = "#A1A1AA"
+brown = "#71717A"
+
+bright_red = "#FB7185"
+bright_yellow = "#F8FAFC"
+bright_green = "#34D399"
+bright_cyan = "#E2E8F0"
+bright_blue = "#E2E8F0"
+bright_magenta = "#D4D4D8"
+
+# ANSI compatibility
+color0 = "#181A20"
+color1 = "#F43F5E"
+color2 = "#10B981"
+color3 = "#E2E8F0"
+color4 = "#CBD5E1"
+color5 = "#A1A1AA"
+color6 = "#94A3B8"
+color7 = "#E2E8F0"
+color8 = "#475569"
+color9 = "#FB7185"
+color10 = "#34D399"
+color11 = "#F8FAFC"
+color12 = "#E2E8F0"
+color13 = "#D4D4D8"
+color14 = "#CBD5E1"
+color15 = "#FFFFFF"
